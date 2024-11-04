@@ -1,0 +1,43 @@
+/* Main container for the app */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body, button {
+  background-color: #310047;
+  color: #ffa345
+}
+a {
+  color:#ffa345
+}
+
+/* Card container styling */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default for mobile */
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* Card styling */
+.card {
+  padding: 1.5em;
+  border: 1px solid #ffa345;
+  border-radius: 8px;
+  background-color: #310047;
+  max-width: 100%;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* Two-column layout for larger screens */
+@media (min-width: 641px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
